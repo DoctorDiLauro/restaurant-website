@@ -182,9 +182,77 @@ small {
     top: 4em;
   }
 
+  .cards,
+  .meals,
+  .deals,
+  .card,
+  .info {
+    overflow: hidden;
+  }
+
   .cards div {
     display: inline-block;
     float: left;
     width: 50%;
+  }
+
+  .meals div {
+    display: inline-block;
+    float: left;
+    width: 50%;
+  }
+
+  .deals div {
+    display: inline-block;
+    float: left;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .banner div {
+    top: 8em;
+  }
+
+  .cards div {
+    width: 25%;
+  }
+
+  .meals div {
+    width: 25%;
+  }
+
+  .deals div {
+    width: 25%;
+  }
+
+  .card div {
+    display: inline-block;
+    float: left;
+    width: 50%;
+  }
+
+  .card img {
+    max-width: 30em;
+    display: block;
+    margin: auto;
+  }
+
+  .info div {
+    display: inline-block;
+    float: left;
+    width: 50%;
+  }
+
+  .info img {
+    max-width: 30em;
+    display: block;
+    margin: auto;
   }
 }
