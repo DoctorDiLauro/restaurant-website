@@ -58,9 +58,11 @@ nav a:hover {
 
 .banner {
   position: relative;
+  max-height: 500px;
+  overflow: hidden;
 }
 
-.banner img {
+.img-flex {
   width: 100%;
   display: block;
 }
@@ -112,6 +114,45 @@ section {
   border-bottom: solid 1px #333;
 }
 
+.cards div figcaption{
+  color: #000;
+  border: solid 3px #000;
+  padding: .4em;
+  border-radius: 4px;
+
+}
+
+.cards div figcaption:hover {
+  color: #fff;
+  background-color: #000;
+  padding: .4em;
+  border-radius: 4px;
+}
+
+.meal-card {
+  position: relative;
+}
+
+.deal-card {
+  position: relative;
+}
+
+.card-card {
+  position: relative;
+}
+
+.info-card {
+  position: relative;
+}
+
+.cards figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
+}
+
 .cards img {
   display: block;
   width: 100%;
@@ -142,13 +183,27 @@ section {
   margin: 1em 0 1em 0;
 }
 
+.info h2,
+.card h2 {
+  margin: 0 0 0 1.3em;
+}
+
+.card div {
+  max-width: 25em;
+  margin: 0 2em 0 2em;
+}
+
+.info div {
+  max-width: 25em;
+  margin: 0 2em 0 2em;
+}
+
 .deals,
 .meals,
 .card,
 .info {
   margin-top: 2em;
 }
-
 footer {
   background-color: #e2e2e2;
   padding: 3em;
@@ -168,7 +223,7 @@ small {
 }
 
 .banner div {
-  top: 2em;
+  top: 1em;
 }
 
 @media only screen and (min-width: 38em) {
@@ -176,6 +231,18 @@ small {
   html {
     font-size: 110%;
     line-height: 1.4;
+  }
+
+  header {
+    overflow: hidden;
+  }
+
+  h1 {
+    float: left;
+  }
+
+  nav ul {
+    float: right;
   }
 
   .banner div {
@@ -255,4 +322,17 @@ small {
     display: block;
     margin: auto;
   }
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+    max-width: 60em;
+    display: block;
+    margin: auto;
+  }
+
+
 }
