@@ -21,6 +21,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #333;
 }
 
 header {
@@ -112,6 +113,9 @@ p {
 
 section {
   border-bottom: solid 1px #333;
+  background-color: #fff;
+  float: left;
+  overflow: hidden;
 }
 
 .cards div figcaption {
@@ -202,7 +206,7 @@ section {
 .meals,
 .card,
 .info {
-  margin-top: 2em;
+  padding-top: 2em;
 }
 
 footer {
